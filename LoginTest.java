@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 //added nothing
 
 //  adding after changes 
+=======
+
+>>>>>>> e825d54c4df58e32cc7dbec58b867cbf6f48250b
 package test;
 
 import org.openqa.selenium.WebDriver;
