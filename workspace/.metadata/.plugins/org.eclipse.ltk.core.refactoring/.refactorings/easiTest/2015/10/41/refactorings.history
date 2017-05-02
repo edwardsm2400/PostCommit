@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;easiTest/src/easiTest/Easi.java&apos; to &apos;EasiPr.java&apos;" description="Rename resource &apos;Easi.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/easiTest/Easi.java" name="EasiPr.java" stamp="1444403924071" updateReferences="true"/>
-</session>

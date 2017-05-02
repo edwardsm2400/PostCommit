@@ -1,9 +1,0 @@
-package automation;
-
-import org.testng.annotations.Test;
-
-public class RbeFunding {
-  @Test
-  public void f() {
-  }
-}
