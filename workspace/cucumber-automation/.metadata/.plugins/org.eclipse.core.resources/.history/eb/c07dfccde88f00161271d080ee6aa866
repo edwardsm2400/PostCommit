@@ -1,0 +1,15 @@
+package com.itg.highcost.cucumber.testDefinition;
+
+import org.openqa.selenium.WebDriver;
+
+import cucumber.api.java.en.Given;
+
+public class TestSteps {
+	static WebDriver driver; 
+	
+	@Given ("^user opens browser$")
+	public static void openBroswer (){
+		driver.get("https://portal-hctest.appiancloud.com/suite/tempo/");
+	}
+
+}

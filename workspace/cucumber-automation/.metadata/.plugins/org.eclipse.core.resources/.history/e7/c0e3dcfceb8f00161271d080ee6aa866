@@ -1,0 +1,23 @@
+package com.itg.highcost.cucumber.testDefinition;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
+
+public class TestSteps {
+	static WebDriver driver; 
+	
+	@Given ("^user opens browser$")
+	public static void openBroswer (){
+		System.setProperty("webdriver.chrome.driver", "Drivers//chromedriver.exe");
+		driver = new ChromeDriver();
+		
+	}
+
+	@And ("^user navigates to application$")
+	public static void navigateToApp (){	
+	driver.get("https://portal-hctest.appiancloud.com/suite/tempo/");
+}
+}

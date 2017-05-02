@@ -1,0 +1,12 @@
+@tag
+Feature: Login into USAC
+  User will be able to log into the system.
+
+  Scenario: Correct username and password
+    Given user opens browser
+    And user navigates to application
+    And clicks agree button
+    When user enters username "test.pa1@itgfirm.com"
+    And user enters password
+    And user enters submit
+    Then user is able to log into system

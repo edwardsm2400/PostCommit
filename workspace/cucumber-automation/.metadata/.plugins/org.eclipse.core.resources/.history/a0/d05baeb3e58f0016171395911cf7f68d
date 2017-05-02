@@ -1,0 +1,5 @@
+package com.itg.highcost.cucumber.testconfig;
+
+public class TestRunner {
+
+}

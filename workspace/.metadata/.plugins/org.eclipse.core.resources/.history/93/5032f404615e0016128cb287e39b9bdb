@@ -1,0 +1,287 @@
+package automation;
+
+
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.Clipboard;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
+import java.io.IOException;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
+
+import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
+
+
+	public class OOC {
+		static WebDriver driver;
+		final String A = ("test.pa1@itgfirm.com");      		  //  username  
+		final String B = ("usac123!");                 	         //   all passwords the same 
+		String C;                 						//    Carrier	 
+		final String E = ("test.lr1@itgfirm.com");             //     username
+		final String F = ("test.lap1@itgfirm.com");            //	  username
+		String G;     					
+		String H;  
+		String I;
+		String Tier = ("Tier 3"); 
+		int choice = 0;
+
+		@Test (priority = 1)
+		public void logIn() throws InterruptedException, IOException {
+		Scanner keyboard= new Scanner(System.in);
+	
+		
+		System.out.print("\nEnter Carrier Name: ");
+		C = keyboard.nextLine();
+		H = C.substring(C.lastIndexOf("-")+1,C.length());
+		System.out.println("Carrier ID extracted : "+H);
+		
+		System.out.print("Apply to All SACs?:\n1)Yes \n2)No & R\nChoice:");
+		choice = keyboard.nextInt();
+		keyboard.nextLine();//consume newline left-over from above line
+		
+		if(choice==1)
+		{
+			I = "Yes";
+			
+		}
+		else if(choice==2)
+		{
+			I = "No";
+			
+		}
+	
+		
+		driver=new FirefoxDriver();
+		driver.get("https://portal-hctest.appiancloud.com/suite/tempo/");
+		driver.manage().window().maximize(); 
+		driver.findElement(By.cssSelector(".btn, input.iBlueButton")).click(); 
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.findElement(By.id("un")).sendKeys(A);
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.findElement(By.id("pw")).sendKeys(B);
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.findElement(By.xpath("//input[@type='submit']")).click();
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		System.out.println("User logged in");
+	}  
+	
+	@Test (priority = 2)
+	public void records() throws InterruptedException, AWTException {
+		driver.findElement(By.partialLinkText("Records")).click();
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.findElement(By.partialLinkText("Carriers")).click();
+		Thread.sleep(2000);
+		/*Robot robot = new Robot();
+		robot.keyPress(KeyEvent.VK_PAGE_DOWN);
+		robot.keyRelease(KeyEvent.VK_PAGE_DOWN);
+		driver.findElement(By.partialLinkText("C")).submit();
+		Thread.sleep(2000);
+		driver.findElement(By.partialLinkText(C)).click();*/
+		driver.findElement(By.xpath("//input[@placeholder='Search Carriers']")).sendKeys(C);
+		driver.findElement(By.xpath("//input[@placeholder='Search Carriers']")).sendKeys(Keys.ENTER);
+		Thread.sleep(2000);
+		driver.findElement(By.partialLinkText(C)).click();
+		System.out.println("Carrier " + "Details" + " form" + " Displayed");
+	} 
+	
+	@Test (priority = 3)
+	public void relatedActions() throws InterruptedException {
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.findElement(By.partialLinkText("Related Actions")).click();
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.findElement(By.partialLinkText("Manage Opinion of Counsel")).click();
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.findElement(By.xpath("//button[contains(.,'Add New Opinion of Counsel')]")).click();
+		
+	} 
+	
+	@Test (priority = 4)
+	public void manageOpinionOfCounsel() throws InterruptedException, AWTException  {
+		
+		
+		driver.manage().timeouts().pageLoadTimeout(15, TimeUnit.SECONDS);
+		
+		/*String usacReceivedDate = driver.findElement(By.xpath("//input[@class='aui-DateInput-Placeholder GN55TI2DE GN55TI2DV']")).getAttribute("id");
+		driver.findElement(By.id(usacReceivedDate)).sendKeys("10/01/2016");
+		Thread.sleep(1000);*/
+		
+		driver.findElement(By.xpath("//label[contains(text(),'USAC Received Date')]")).sendKeys("10/01/2016");
+		driver.findElement(By.xpath("//label[contains(text(),'USAC Received Date')]")).sendKeys(Keys.ENTER);
+		Thread.sleep(1000);
+		
+		driver.findElement(By.xpath("//label[contains(text(),'OOC Date')]")).sendKeys("10/10/2016");
+		driver.findElement(By.xpath("//label[contains(text(),'OOC Date')]")).sendKeys(Keys.ENTER);
+		Thread.sleep(1000);
+		
+		driver.findElement(By.xpath("//label[contains(text(),'Final OOC Revision')]")).sendKeys("11/01/2016");
+		driver.findElement(By.xpath("//label[contains(text(),'Final OOC Revision')]")).sendKeys(Keys.ENTER);
+		Thread.sleep(1000);
+		
+		driver.findElement(By.xpath("//label[contains(text(),'Firm Name')]")).sendKeys("Test And Test");
+		Thread.sleep(1000);
+		
+		driver.findElement(By.xpath("//label[contains(text(),'Attorney Name')]")).sendKeys("David Fisher");
+		Thread.sleep(1000);
+		
+		//driver.findElement(By.xpath("//label[contains(text(),'Opinion of Counsel')]")).click();
+		
+		String text = "upload.xlsx";
+		StringSelection stringSelection = new StringSelection(text);
+		Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+		clipboard.setContents(stringSelection, stringSelection);
+		Robot robot = new Robot();
+		Thread.sleep(1000);
+		
+		driver.findElement(By.xpath("//input[@type='file']")).click();
+		Thread.sleep(5000);
+		robot.keyPress(KeyEvent.VK_CONTROL);
+		robot.keyPress(KeyEvent.VK_V);
+		robot.keyRelease(KeyEvent.VK_V);
+		robot.keyRelease(KeyEvent.VK_CONTROL);
+		Thread.sleep(2000);
+		robot.keyPress(KeyEvent.VK_ENTER);
+		Thread.sleep(1000);
+
+		driver.findElement(By.xpath("//button[contains(.,'Submit for Review')]")).click();
+		
+		/*System.out.println("DO you want to select yes or no ");
+		Scanner sc = new Scanner(System.in);
+		String response = sc.next();
+	
+		if (response.equalsIgnoreCase("yes")) {
+			driver.findElement(By.xpath("//button[contains(.,'Submit for Review')]")).click();
+		} else if (response.equalsIgnoreCase("no")) {
+			
+		}*/
+		
+	}
+	@Test (priority = 5)
+	public void signOutPa() throws InterruptedException, IOException {
+		Thread.sleep(2000);
+		driver.findElement(By.cssSelector(".appian-body .GN55TI2B5B a")).click();
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.findElement(By.partialLinkText("Sign Out")).click();
+	} 
+		
+	@Test (priority = 6)
+	public void logInLr() throws InterruptedException {
+		driver.findElement(By.cssSelector(".btn, input.iBlueButton")).click(); 
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.findElement(By.id("un")).sendKeys(E);
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.findElement(By.id("pw")).sendKeys(B);
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.findElement(By.xpath("//input[@type='submit']")).click();
+		Thread.sleep(7000);	
+		driver.findElement(By.partialLinkText("Tasks")).click();
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.findElement(By.partialLinkText("Review Opinion of Counsel (" + C + ")")).click();
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.findElement(By.xpath("//button[contains(.,'Accept')]")).click();
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//label[contains(text(),'Review Feedback')]")).sendKeys("Ready!");
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//button[contains(.,'Submit for Legal Decision')]")).click();
+		
+    }	
+	
+	
+	@Test (priority = 7)
+	public void signOutLr() throws InterruptedException, IOException {
+		Thread.sleep(2000);
+		driver.findElement(By.cssSelector(".appian-body .GN55TI2B5B a")).click();
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.findElement(By.partialLinkText("Sign Out")).click();
+	}
+		
+	
+	@Test (priority = 8)
+	public void logInLap() throws InterruptedException {
+		driver.findElement(By.cssSelector(".btn, input.iBlueButton")).click(); 
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.findElement(By.id("un")).sendKeys(F);
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.findElement(By.id("pw")).sendKeys(B);
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.findElement(By.xpath("//input[@type='submit']")).click();
+		Thread.sleep(7000);	
+		driver.findElement(By.partialLinkText("Tasks")).click();
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.findElement(By.partialLinkText("Review and Approve Opinion of Counsel (" + C + ")")).click();
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//button[contains(.,'Accept')]")).click();
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//label[contains(text(),'Approve')]")).click();
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//label[contains(text(),'Approver Feedback')]")).sendKeys("Approved");
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//button[contains(.,'Submit Decision')]")).click();
+		
+	}
+
+	
+	@Test (priority = 9)
+	public void signOutLap() throws InterruptedException, IOException {
+		Thread.sleep(2000);
+		driver.findElement(By.cssSelector(".appian-body .GN55TI2B5B a")).click();
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.findElement(By.partialLinkText("Sign Out")).click();
+	} 
+	
+	
+	@Test (priority = 10)
+	public void logInLrEmail() throws InterruptedException, AWTException {
+
+	/*	String text = "upload.xlsx";
+		StringSelection stringSelection = new StringSelection(text);
+		Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+		clipboard.setContents(stringSelection, stringSelection);
+		*/Robot robot = new Robot();
+		Thread.sleep(1000);
+		
+		
+		
+		driver.findElement(By.cssSelector(".btn, input.iBlueButton")).click(); 
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.findElement(By.id("un")).sendKeys(E);
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.findElement(By.id("pw")).sendKeys(B);
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.findElement(By.xpath("//input[@type='submit']")).click();
+		Thread.sleep(7000);	
+		driver.findElement(By.partialLinkText("Tasks")).click();
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.findElement(By.partialLinkText("Edit Carrier Email (" + C + ")")).click();
+		Thread.sleep(2000);
+		
+		driver.findElement(By.partialLinkText("Add Document")).click();
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//input[@type='file']")).click();
+		Thread.sleep(5000);
+		robot.keyPress(KeyEvent.VK_CONTROL);
+		robot.keyPress(KeyEvent.VK_V);
+		robot.keyRelease(KeyEvent.VK_V);
+		robot.keyRelease(KeyEvent.VK_CONTROL);
+		Thread.sleep(4000);
+		robot.keyPress(KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
+		
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.findElement(By.xpath("//label[contains(text(),'Recipients')]")).sendKeys(Keys.CONTROL + "a");
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//label[contains(text(),'Recipients')]")).sendKeys("usac-cap-testers@itgfirm.com");
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//button[contains(.,'Send Email')]")).click();
+		
+}
+
+}
