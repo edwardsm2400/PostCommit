@@ -9,7 +9,7 @@ import jxl.read.biff.BiffException;
 public class Data {
 	public String userName() {
 		 
-		File src= new File ("C:\\Users\\edwardsm\\Desktop\\TestData.xls");
+		File src= new File ("C:\\USAC Project\\PostCommit\\usacupgrade\\TestData.xls");
 		Workbook wb;
 		try {
 			wb = Workbook.getWorkbook(src);
@@ -28,7 +28,7 @@ public class Data {
 	
 	public String userPass() {
 		
-		File src= new File ("C:\\Users\\edwardsm\\Desktop\\TestData.xls");
+		File src= new File ("C:\\USAC Project\\PostCommit\\usacupgrade\\TestData.xls");
 		Workbook wb;
 		try {
 			wb = Workbook.getWorkbook(src);
@@ -47,7 +47,7 @@ public class Data {
 	
 	public String getUser() {
 		 
-		File src= new File ("C:\\Users\\edwardsm\\Desktop\\TestData.xls");
+		File src= new File ("C:\\USAC Project\\PostCommit\\usacupgrade\\TestData.xls");
 		Workbook wb;
 		try {
 			wb = Workbook.getWorkbook(src);
