@@ -65,7 +65,7 @@ public class Data {
 	}
 	
 	
-	public String record() {
+	public String getrecord() {
 		 
 		File src= new File ("C:\\USAC Project\\PostCommit\\usacupgrade\\TestData.xls");
 		Workbook wb;

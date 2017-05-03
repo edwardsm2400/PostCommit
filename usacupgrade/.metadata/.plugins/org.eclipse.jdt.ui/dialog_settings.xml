@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="C:\USAC Project\PostCommit\usacupgrade\selenium-2.53.0" key="org.eclipse.jdt.ui.lastextjar"/>
+	<item value="C:\USAC Project\PostCommit\usacupgrade" key="org.eclipse.jdt.ui.lastextjar"/>
 	<section name="GenerateConstructorUsingFieldsSelectionDialog">
 		<item value="false" key="OmitCallToSuper"/>
 	</section>

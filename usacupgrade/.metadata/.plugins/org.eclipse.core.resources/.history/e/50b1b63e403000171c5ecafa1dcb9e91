@@ -30,6 +30,11 @@ public class LoginTest {
 		RecordsPage recordsPage = new RecordsPage(driver);
 		recordsPage.clickServiceSub();
 		
+		Data testdata = new Data ();
+	
+		
+		pages.SelectRecord SelectRecord = new (driver);
+		SelectRecord.record(testdata.record());
 		
 	}
 	}

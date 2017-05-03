@@ -65,23 +65,4 @@ public class Data {
 	}
 	
 	
-	public String record() {
-		 
-		File src= new File ("C:\\USAC Project\\PostCommit\\usacupgrade\\TestData.xls");
-		Workbook wb;
-		try {
-			wb = Workbook.getWorkbook(src);
-			String data03=wb.getSheet(0).getCell(0, 2).getContents();
-			  return data03;
-		
-		} catch (BiffException e) {
-			
-			e.printStackTrace();
-		} catch (IOException e) {
-			
-			e.printStackTrace();
-		}
-		return null; 
-	}
-	
 }

@@ -8,11 +8,11 @@ import dataSheet.Data;
 import pages.LoginPage;
 import pages.RecordsPage;
 
+
 public class LoginTest {
 	
 	LoginPage loginPage;
-	
-	 WebDriver driver = new FirefoxDriver();
+	WebDriver driver = new FirefoxDriver();
 	 
 	@Test (priority=1)
 	public void userLogin() {
@@ -28,6 +28,9 @@ public class LoginTest {
 	@Test (priority=2)
 	public void recordsTab(){
 		RecordsPage recordsPage = new RecordsPage(driver);
-		  recordsPage.clickAppeals();
+		recordsPage.clickServiceSub();
+		
+	
+	
 	}
 	}
