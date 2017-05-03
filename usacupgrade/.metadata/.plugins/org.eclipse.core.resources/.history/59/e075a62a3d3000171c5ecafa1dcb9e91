@@ -34,9 +34,9 @@ public class RecordsPage {
 	  driver.findElement(comad).click();  
 	  }
   
-  public void clickServiceSub() {
+  public void clickUsers() {
 	  driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 	  driver.findElement(records).click();
-	  driver.findElement(servicesub).click();  
+	  driver.findElement(users).click();  
 	  }
 }

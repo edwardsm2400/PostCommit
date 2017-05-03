@@ -15,7 +15,7 @@ public class RecordsPage {
   By records=(By.partialLinkText("Records"));
   By appeals=(By.partialLinkText("Appeals"));
   By comad=(By.partialLinkText("COMAD"));
-  By servicesub=(By.partialLinkText("Service Substitutions"));
+  By users=(By.partialLinkText("Users"));
   
   
   public RecordsPage(WebDriver driver) {
@@ -34,9 +34,9 @@ public class RecordsPage {
 	  driver.findElement(comad).click();  
 	  }
   
-  public void clickServiceSub() {
+  public void clickUsers() {
 	  driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 	  driver.findElement(records).click();
-	  driver.findElement(servicesub).click();  
+	  driver.findElement(users).click();  
 	  }
 }

@@ -28,6 +28,6 @@ public class LoginTest {
 	@Test (priority=2)
 	public void recordsTab(){
 		RecordsPage recordsPage = new RecordsPage(driver);
-		  recordsPage.clickServiceSub();
+		  recordsPage.clickAppeals();
 	}
 	}
