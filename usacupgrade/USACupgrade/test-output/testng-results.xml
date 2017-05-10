@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18602" started-at="2017-05-03T20:19:54Z" finished-at="2017-05-03T20:20:13Z">
+  <suite name="Default suite" duration-ms="10844" started-at="2017-05-10T16:51:36Z" finished-at="2017-05-10T16:51:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18602" started-at="2017-05-03T20:19:54Z" finished-at="2017-05-03T20:20:13Z">
+    <test name="Default test" duration-ms="10844" started-at="2017-05-10T16:51:36Z" finished-at="2017-05-10T16:51:47Z">
       <class name="test.LoginTest">
-        <test-method status="PASS" signature="userLogin()[pri:1, instance:test.LoginTest@11bd0f3b]" name="userLogin" duration-ms="5402" started-at="2017-05-03T16:19:54Z" finished-at="2017-05-03T16:20:00Z">
+        <test-method status="PASS" signature="userLogin()[pri:1, instance:test.LoginTest@67080771]" name="userLogin" duration-ms="3457" started-at="2017-05-10T12:51:36Z" finished-at="2017-05-10T12:51:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userLogin -->
-        <test-method status="PASS" signature="recordsTab()[pri:2, instance:test.LoginTest@11bd0f3b]" name="recordsTab" duration-ms="13160" started-at="2017-05-03T16:20:00Z" finished-at="2017-05-03T16:20:13Z">
+        <test-method status="PASS" signature="recordsTab()[pri:2, instance:test.LoginTest@67080771]" name="recordsTab" duration-ms="7362" started-at="2017-05-10T12:51:40Z" finished-at="2017-05-10T12:51:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- recordsTab -->
