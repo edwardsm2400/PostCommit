@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import dataSheet.Data;
 import pages.LoginPage;
 import pages.RecordsPage;
+import pages.SelectRecord;
 
 
 public class LoginTest {
@@ -30,7 +31,11 @@ public class LoginTest {
 		RecordsPage recordsPage = new RecordsPage(driver);
 		recordsPage.clickServiceSub();
 		
+		/*SelectRecord selectRecord = new SelectRecord();
+		selectRecord.record(Record);*/
+		
+		
+		
 		
 	}
 	}
-// just adding a comment to check git
