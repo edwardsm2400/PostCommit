@@ -6,8 +6,8 @@ import java.util.Scanner;
 public class Selenium_Java_Practice {
 
 	public static void main(String[] args) {
-		reverseStrMethod();
-		nFactorial();
+		//reverseStrMethod();
+		//nFactorial();
 		bigNumFactorial();
 	}
 	
