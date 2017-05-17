@@ -1,19 +1,48 @@
 package selenium_Java;
 
 import java.math.BigInteger;
+import java.util.Calendar;
 import java.util.Scanner;
+import java.util.TimeZone;
 
 public class Selenium_Java_Practice {
 
 	public static void main(String[] args) {
-		reverseStrMethod();
-		nFactorial();
-		bigNumFactorial();
-	}
+		
+		/*
+		
+		//reverseStrMethod();
+		//nFactorial();
+		//bigNumFactorial();
+		//System.out.print("Is given String a palindrome?  The answer is ");
+		//System.out.print(isPalindromeFor("racecar"));
+		//System.out.print(isPalindromeWhile("racecar"));
+		//System.out.println(isPalindrome("noon"));
+		//System.out.println(isParlidomeWhile("noon"));
+		
+		//System.out.println(isPalindromeForLoop("nooN"));
+	
+		//System.out.println(isParlidromeFor("niuoon"));
+		int[] arr = new int[3];
+		System.out.println(arr.length);//length for array
+		 
+		String str = "abc";
+		System.out.println(str.length());//length() for string
+		
+		*/
+		 Calendar calNewYork = Calendar.getInstance();  
+	     calNewYork.setTimeZone(TimeZone.getTimeZone("America/New_York"));  
+	        System.out.println();   
+	      System.out.println("Time in New York: " + calNewYork.get(Calendar.HOUR_OF_DAY) + ":"  
+	        + calNewYork.get(Calendar.MINUTE)+":"+calNewYork.get(Calendar.SECOND));  
+	           System.out.println();  
+	     }
+		
+	
 	
 	public static void reverseStrMethod(){
 		
-		String originalStr = "Tayyab";
+		String originalStr = "baoyaT";
 		String reversedStr = "";
 		
 		
@@ -116,37 +145,75 @@ public boolean isPalindrome(String s) {
 Best Article ever https://techbeacon.com/how-pass-coding-interview-automation-developer
 
 
-*/	
 
 
 
 
 
+public static boolean isPalindromeWhile(String s) {
+    int head = 0;
+    int tail = s.length() - 1;
+    while (head < tail) {
+        if (s.charAt(head) != s.charAt(tail)) {
+            return false;
+         }
+        head++;
+        tail--;
+    }
+    
+   return true;
+}
+
+public static boolean isPalindromeFor(String s) {
+    int len = s.length();
+    for (int i = 0; i < len / 2; i++) {
+        if ( s.charAt(i) != s.charAt(len - 1 - i)) {
+            return false;
+        }
+    }
+    return true;
+}
 
 
+*/
 
+public static boolean isParlidomeWhile(String s){
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+int head = 0;
+int tail = s.length()-1;
+while(head < tail){
+	if (s.charAt(head)!= s.charAt(tail)){
+		return false;
+	}
+	head++;
+	tail--;
+	
+}
+return true;
 
 
 
 
 
 }
+
+public static boolean isParlidromeFor(String s){
+	
+	int len = s.length();
+	
+	for (int i =0; i < len / 2 ; i++){
+		if(s.charAt(i)!= s.charAt(len -1 -i)){
+			return false;
+		}
+		}
+		return true;
+	}
+	
+	
+}
+
+
+
 
 
 
