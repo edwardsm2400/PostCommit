@@ -9,11 +9,11 @@ public class Selenium_Java_Practice {
 
 	public static void main(String[] args) {
 		
-		/*
 		
-		//reverseStrMethod();
+		
+		/*reverseStrMethod();
 		//nFactorial();
-		//bigNumFactorial();
+		 //bigNumFactorial();
 		//System.out.print("Is given String a palindrome?  The answer is ");
 		//System.out.print(isPalindromeFor("racecar"));
 		//System.out.print(isPalindromeWhile("racecar"));
@@ -22,27 +22,27 @@ public class Selenium_Java_Practice {
 		
 		//System.out.println(isPalindromeForLoop("nooN"));
 	
-		//System.out.println(isParlidromeFor("niuoon"));
-		int[] arr = new int[3];
+		*/System.out.println(isParlidromeFor("mayIyam"));
+		/*int[] arr = new int[3];
 		System.out.println(arr.length);//length for array
 		 
 		String str = "abc";
 		System.out.println(str.length());//length() for string
 		
-		*/
+		
 		 Calendar calNewYork = Calendar.getInstance();  
 	     calNewYork.setTimeZone(TimeZone.getTimeZone("America/New_York"));  
 	        System.out.println();   
-	      System.out.println("Time in New York: " + calNewYork.get(Calendar.HOUR_OF_DAY) + ":"  
+	      System.out.println("Time is: " + calNewYork.get(Calendar.HOUR_OF_DAY) + ":"  
 	        + calNewYork.get(Calendar.MINUTE)+":"+calNewYork.get(Calendar.SECOND));  
-	           System.out.println();  
+	           System.out.println();  */
 	     }
 		
 	
 	
 	public static void reverseStrMethod(){
 		
-		String originalStr = "baoyaT";
+		String originalStr = "JAckson";
 		String reversedStr = "";
 		
 		

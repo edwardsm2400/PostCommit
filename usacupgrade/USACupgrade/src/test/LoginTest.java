@@ -14,12 +14,14 @@ public class LoginTest {
 	
 	LoginPage loginPage;
 	WebDriver driver = new FirefoxDriver();
+	Data testData = new Data(); 
+	
 	 
 	@Test (priority=1)
 	public void userLogin() {
-		  Data testData = new Data(); 
+		  //Data testData = new Data(); 
 		 
-		  driver.get("https://portal-int.appiancloud.com/suite/");
+		  driver.get("https://portal-test4.appiancloud.com/suite");
 		  
 		  loginPage = new LoginPage(driver);
 				  
@@ -29,11 +31,14 @@ public class LoginTest {
 	@Test (priority=2)
 	public void recordsTab(){
 		RecordsPage recordsPage = new RecordsPage(driver);
-		recordsPage.clickServiceSub();
-		
-		/*SelectRecord selectRecord = new SelectRecord();
-		selectRecord.record(Record);*/
-		
+		recordsPage.clickComad();
+	}
+	@Test (priority=3)
+	public void selectRecord(){
+		SelectRecord selectRecord = new SelectRecord(driver);
+		selectRecord.record(testData.record() );
+	
+	
 		
 		
 		
