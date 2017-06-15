@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="32507" started-at="2017-06-15T14:29:49Z" finished-at="2017-06-15T14:30:21Z">
+  <suite name="Default suite" duration-ms="32879" started-at="2017-06-15T14:57:58Z" finished-at="2017-06-15T14:58:31Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="32507" started-at="2017-06-15T14:29:49Z" finished-at="2017-06-15T14:30:21Z">
+    <test name="Default test" duration-ms="32879" started-at="2017-06-15T14:57:58Z" finished-at="2017-06-15T14:58:31Z">
       <class name="test.CreateComad">
-        <test-method status="PASS" signature="userLogin()[pri:1, instance:test.CreateComad@53976f5c]" name="userLogin" duration-ms="2899" started-at="2017-06-15T10:29:49Z" finished-at="2017-06-15T10:29:52Z">
+        <test-method status="PASS" signature="userLogin()[pri:1, instance:test.CreateComad@53976f5c]" name="userLogin" duration-ms="6023" started-at="2017-06-15T10:57:58Z" finished-at="2017-06-15T10:58:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userLogin -->
-        <test-method status="PASS" signature="actionsTab()[pri:2, instance:test.CreateComad@53976f5c]" name="actionsTab" duration-ms="4914" started-at="2017-06-15T10:29:52Z" finished-at="2017-06-15T10:29:57Z">
+        <test-method status="PASS" signature="actionsTab()[pri:2, instance:test.CreateComad@53976f5c]" name="actionsTab" duration-ms="1928" started-at="2017-06-15T10:58:04Z" finished-at="2017-06-15T10:58:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- actionsTab -->
-        <test-method status="PASS" signature="selectFrn()[pri:3, instance:test.CreateComad@53976f5c]" name="selectFrn" duration-ms="24674" started-at="2017-06-15T10:29:57Z" finished-at="2017-06-15T10:30:21Z">
+        <test-method status="PASS" signature="selectFrn()[pri:3, instance:test.CreateComad@53976f5c]" name="selectFrn" duration-ms="24911" started-at="2017-06-15T10:58:06Z" finished-at="2017-06-15T10:58:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectFrn -->
