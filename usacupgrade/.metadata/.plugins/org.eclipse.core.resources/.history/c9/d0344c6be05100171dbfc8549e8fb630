@@ -62,7 +62,7 @@ public class SelectFrnPage {
 	  }
   
   public void comadDetails () throws InterruptedException, AWTException{
-	  String text = "C:\\USAC Project\\PostCommit\\usacupgrade\\upload.xlsx";
+	  String text = "C:\USAC Project\PostCommit\usacupgrade\upload.xlsx";
 		StringSelection stringSelection = new StringSelection(text);
 		Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
 		clipboard.setContents(stringSelection, stringSelection);
