@@ -1,0 +1,23 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
+
+public class ActionsPage {
+	
+	private WebDriver driver;
+	
+  @Test
+  public void ActionPage(WebDriver driver) {
+	  this.driver = driver;}
+	  
+	  By initiateComad=(By.partialLinkText("Initiate COMAD"));
+  
+  
+  public void clickInitiate (){
+	  driver.findElement(initiateComad).click();
+	  
+  }
+
+}

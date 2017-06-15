@@ -13,8 +13,16 @@
 <fullyQualifiedTypeName name="pages.RecordsPage"/>
 <fullyQualifiedTypeName name="pages.LoginPage"/>
 <fullyQualifiedTypeName name="pages.SelectUser"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.Keys"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.FindBy"/>
 <fullyQualifiedTypeName name="pages.selectRecord"/>
 <fullyQualifiedTypeName name="pages.SelectRecord"/>
+<fullyQualifiedTypeName name="pages.ActionsPage"/>
+<fullyQualifiedTypeName name="pages.SelectFrnPage"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.Keys"/>
+<fullyQualifiedTypeName name="java.awt.datatransfer.StringSelection"/>
+<fullyQualifiedTypeName name="java.awt.Toolkit"/>
+<fullyQualifiedTypeName name="java.awt.datatransfer.Clipboard"/>
+<fullyQualifiedTypeName name="java.awt.Robot"/>
+<fullyQualifiedTypeName name="com.thoughtworks.selenium.webdriven.commands.KeyEvent"/>
+<fullyQualifiedTypeName name="java.awt.event.KeyEvent"/>
 </qualifiedTypeNameHistroy>

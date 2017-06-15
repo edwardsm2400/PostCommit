@@ -45,13 +45,13 @@ public class Data {
 		return null; 
 	}
 	
-	public String getUser() {
+	public String comadFrn() {
 		 
 		File src= new File ("C:\\USAC Project\\PostCommit\\usacupgrade\\TestData.xls");
 		Workbook wb;
 		try {
 			wb = Workbook.getWorkbook(src);
-			String data02=wb.getSheet(0).getCell(1, 0).getContents();
+			String data02=wb.getSheet(0).getCell(0, 2).getContents();
 			  return data02;
 		
 		} catch (BiffException e) {
@@ -65,13 +65,13 @@ public class Data {
 	}
 	
 	
-	public String record() {
+	public String recoveryType() {
 		 
 		File src= new File ("C:\\USAC Project\\PostCommit\\usacupgrade\\TestData.xls");
 		Workbook wb;
 		try {
 			wb = Workbook.getWorkbook(src);
-			String data03=wb.getSheet(0).getCell(0, 2).getContents();
+			String data03=wb.getSheet(0).getCell(0, 3).getContents();
 			  return data03;
 		
 		} catch (BiffException e) {
