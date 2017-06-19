@@ -1,0 +1,26 @@
+package test;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
+
+import dataSheet.Data;
+import pages.LoginPage;
+
+public class ComadReview {
+ 
+  LoginPage loginPage;
+  WebDriver driver = new FirefoxDriver();
+  Data testData = new Data(); 
+
+
+@Test (priority=1)
+public void userLogin() {
+	  //Data testData = new Data(); 
+	 
+	driver.get("https://portal-test4.appiancloud.com/suite");
+	loginPage = new LoginPage(driver);
+	loginPage.loginToUsac(testData.userName(), testData.userPass() );
+	  
+}
+}

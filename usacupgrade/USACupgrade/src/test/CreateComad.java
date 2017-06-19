@@ -42,7 +42,8 @@ public class CreateComad {
 	public void selectFrn() throws InterruptedException, AWTException{
 		SelectFrnPage selectFrnpage = new SelectFrnPage(driver);
 		selectFrnpage.selectingFrn(testData.comadFrn(), testData.recoveryType());
-		selectFrnpage.comadDetails();
+		selectFrnpage.comadDetails(testData.requestName(), testData.narrative());
+		selectFrnpage.comadConfirm();
 		
 		
 	}

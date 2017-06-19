@@ -30,7 +30,7 @@ public class SelectFrnPage {
 	By narrative=(By.xpath("//label[contains(text(),'Narrative')]"));
 	By origin=(By.xpath("/html/body/div[6]/div[2]/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/form/div[2]/div/div/div/div/div/div/div[1]/div[3]/div/div/div/div/div/div[3]/div/div/div/div[1]/div/select"));
 	By submit=  (By.xpath("//button[contains(.,'Submit')]"));
-	By confirm = (By.cssSelector(".appian-body .GJEWJWHDCGB h5"));
+	By confirmation = (By.id("rich-text "));
 	
 	public SelectFrnPage(WebDriver driver) {
 	  this.driver = driver;
@@ -61,7 +61,7 @@ public class SelectFrnPage {
 	  driver.findElement(continueOn).click();
 	  }
   
-  public void comadDetails () throws InterruptedException, AWTException{
+  public void comadDetails (String requestName, String narrativeHere) throws InterruptedException, AWTException{
 	  String text = "C:\\USAC Project\\PostCommit\\usacupgrade\\upload.xlsx";
 		StringSelection stringSelection = new StringSelection(text);
 		Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
@@ -69,9 +69,9 @@ public class SelectFrnPage {
 		Robot robot = new Robot();
 		
 	  driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-	  driver.findElement(nickname).sendKeys("Nickname goes here");
+	  driver.findElement(nickname).sendKeys(requestName);
 	  driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-	  driver.findElement(narrative).sendKeys("Story of my life");
+	  driver.findElement(narrative).sendKeys(narrativeHere);
 	  Thread.sleep(1500);
 	  driver.findElement(origin).sendKeys("Appeals");
 	  Thread.sleep(1000);
@@ -91,7 +91,8 @@ public class SelectFrnPage {
   }
   
   public void comadConfirm (){
-	  
+	  String confirm = driver.findElement(confirmation).getAttribute("value");
+		System.out.println(confirm);
 	  
   }
 }

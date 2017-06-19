@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="32879" started-at="2017-06-15T14:57:58Z" finished-at="2017-06-15T14:58:31Z">
+  <suite name="Default suite" duration-ms="24993" started-at="2017-06-19T18:35:46Z" finished-at="2017-06-19T18:36:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="32879" started-at="2017-06-15T14:57:58Z" finished-at="2017-06-15T14:58:31Z">
-      <class name="test.CreateComad">
-        <test-method status="PASS" signature="userLogin()[pri:1, instance:test.CreateComad@53976f5c]" name="userLogin" duration-ms="6023" started-at="2017-06-15T10:57:58Z" finished-at="2017-06-15T10:58:04Z">
+    <test name="Default test" duration-ms="24993" started-at="2017-06-19T18:35:46Z" finished-at="2017-06-19T18:36:11Z">
+      <class name="test.ComadReview">
+        <test-method status="PASS" signature="frmUserLogin()[pri:1, instance:test.ComadReview@53976f5c]" name="frmUserLogin" duration-ms="2638" started-at="2017-06-19T14:35:46Z" finished-at="2017-06-19T14:35:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userLogin -->
-        <test-method status="PASS" signature="actionsTab()[pri:2, instance:test.CreateComad@53976f5c]" name="actionsTab" duration-ms="1928" started-at="2017-06-15T10:58:04Z" finished-at="2017-06-15T10:58:06Z">
+        </test-method> <!-- frmUserLogin -->
+        <test-method status="PASS" signature="frmSelectRequest()[pri:2, instance:test.ComadReview@53976f5c]" name="frmSelectRequest" duration-ms="20224" started-at="2017-06-19T14:35:49Z" finished-at="2017-06-19T14:36:09Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- actionsTab -->
-        <test-method status="PASS" signature="selectFrn()[pri:3, instance:test.CreateComad@53976f5c]" name="selectFrn" duration-ms="24911" started-at="2017-06-15T10:58:06Z" finished-at="2017-06-15T10:58:31Z">
+        </test-method> <!-- frmSelectRequest -->
+        <test-method status="PASS" signature="frmSignOut()[pri:3, instance:test.ComadReview@53976f5c]" name="frmSignOut" duration-ms="2111" started-at="2017-06-19T14:36:09Z" finished-at="2017-06-19T14:36:11Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectFrn -->
-      </class> <!-- test.CreateComad -->
+        </test-method> <!-- frmSignOut -->
+      </class> <!-- test.ComadReview -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

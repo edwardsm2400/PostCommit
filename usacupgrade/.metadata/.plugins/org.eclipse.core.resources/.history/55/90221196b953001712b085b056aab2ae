@@ -1,0 +1,15 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
+
+public class PostAssignmentPage {
+	private WebDriver driver;
+	By frn=(By.xpath("//label[contains(text(),'FRN')]"));
+	
+	@Test
+  public void PostAssignmentPage() {
+		this.driver = driver;
+  }
+}
