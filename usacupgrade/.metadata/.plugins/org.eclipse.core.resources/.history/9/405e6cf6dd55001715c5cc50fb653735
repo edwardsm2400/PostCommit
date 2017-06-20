@@ -24,7 +24,7 @@ public class ComadReviewTest {
 @Test (priority=1)
 public void finalReviewManagerLogin() {
 	  //Data testData = new Data(); 
-	
+	 
 	driver.get("https://portal-test4.appiancloud.com/suite");
 	loginPage = new LoginPage(driver); 
 	loginPage.loginToUsac(testData.ComadFinalReviewManager(), testData.userPassword() );
