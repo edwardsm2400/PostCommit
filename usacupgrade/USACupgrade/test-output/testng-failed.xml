@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="test.ComadReview">
+      <class name="test.CreateComad">
         <methods>
-          <include name="frmSelectRequest"/>
+          <include name="selectFrn"/>
         </methods>
-      </class> <!-- test.ComadReview -->
+      </class> <!-- test.CreateComad -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

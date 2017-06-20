@@ -1,0 +1,19 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
+
+public class RelatedActionsPage {
+	WebDriver driver;
+	By summary=(By.linkText("Summary"));
+	By relatedActions=(By.partialLinkText("Related Actions"));
+	By comadReviewers=(By.linkText("COMAD Reviewers Summary"));
+	
+  public RelatedActionsPage(WebDriver driver) {
+	  this.driver=driver;
+  }
+
+
+
+}

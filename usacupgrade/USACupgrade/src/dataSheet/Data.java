@@ -26,7 +26,7 @@ public class Data {
 		return null; 
 	}
 	
-	public String userPass() {
+	public String userPassword() {
 		
 		File src= new File ("C:\\USAC Project\\PostCommit\\usacupgrade\\TestData.xls");
 		Workbook wb;
@@ -45,7 +45,7 @@ public class Data {
 		return null; 
 	}
 	
-	public String comadFrn() {
+	public String ComadFrn() {
 		 
 		File src= new File ("C:\\USAC Project\\PostCommit\\usacupgrade\\TestData.xls");
 		Workbook wb;
@@ -65,7 +65,7 @@ public class Data {
 	}
 	
 	
-	public String recoveryType() {
+	public String ComadRecoveryType() {
 		 
 		File src= new File ("C:\\USAC Project\\PostCommit\\usacupgrade\\TestData.xls");
 		Workbook wb;
@@ -83,7 +83,7 @@ public class Data {
 		}
 		return null; 
 	}
-	public String requestName() {
+	public String ComadRequestName() {
 		 
 		File src= new File ("C:\\USAC Project\\PostCommit\\usacupgrade\\TestData.xls");
 		Workbook wb;
@@ -101,7 +101,7 @@ public class Data {
 		}
 		return null; 
 	}
-	public String narrative() {
+	public String ComadNarrative() {
 		 
 		File src= new File ("C:\\USAC Project\\PostCommit\\usacupgrade\\TestData.xls");
 		Workbook wb;
@@ -119,7 +119,7 @@ public class Data {
 		}
 		return null; 
 	}
-	public String iRM() {
+	public String ComadInitialReviewManager() {
 		 
 		File src= new File ("C:\\USAC Project\\PostCommit\\usacupgrade\\TestData.xls");
 		Workbook wb;
@@ -138,7 +138,7 @@ public class Data {
 		return null; 
 	}
 	
-	public String iR() {
+	public String ComadInitialReviewer() {
 		 
 		File src= new File ("C:\\USAC Project\\PostCommit\\usacupgrade\\TestData.xls");
 		Workbook wb;
@@ -157,7 +157,7 @@ public class Data {
 		return null; 
 	}
 	
-	public String fRM() {
+	public String ComadFinalReviewManager() {
 		 
 		File src= new File ("C:\\USAC Project\\PostCommit\\usacupgrade\\TestData.xls");
 		Workbook wb;
@@ -176,7 +176,7 @@ public class Data {
 		return null; 
 	}
 	
-	public String fR() {
+	public String ComadFinalReviewer() {
 		 
 		File src= new File ("C:\\USAC Project\\PostCommit\\usacupgrade\\TestData.xls");
 		Workbook wb;
@@ -196,7 +196,7 @@ public class Data {
 	
 	}
 	
-	public String qAM() {
+	public String ComadQaManager() {
 		 
 		File src= new File ("C:\\USAC Project\\PostCommit\\usacupgrade\\TestData.xls");
 		Workbook wb;
@@ -215,7 +215,7 @@ public class Data {
 		return null; 
 	}
 	
-	public String qAR() {
+	public String ComadQaReviewer() {
 		 
 		File src= new File ("C:\\USAC Project\\PostCommit\\usacupgrade\\TestData.xls");
 		Workbook wb;
@@ -233,7 +233,7 @@ public class Data {
 		}
 		return null; 
 	}
-	public String usacM() {
+	public String ComadUsacManager() {
 		 
 		File src= new File ("C:\\USAC Project\\PostCommit\\usacupgrade\\TestData.xls");
 		Workbook wb;
@@ -252,8 +252,8 @@ public class Data {
 		return null; 
 	}
 	
-	public String usacR() {
-		 
+	public String ComadUsacReviewer() {
+		
 		File src= new File ("C:\\USAC Project\\PostCommit\\usacupgrade\\TestData.xls");
 		Workbook wb;
 		try {
@@ -270,7 +270,7 @@ public class Data {
 		}
 		return null; 
 	}
-	public String reviewType() {
+	public String ComadReviewType() {
 		 
 		File src= new File ("C:\\USAC Project\\PostCommit\\usacupgrade\\TestData.xls");
 		Workbook wb;
@@ -289,7 +289,7 @@ public class Data {
 		return null; 
 	}
 	
-	public String requestNum() {
+	public String ComadRequestNumber() {
 		 
 		File src= new File ("C:\\USAC Project\\PostCommit\\usacupgrade\\TestData.xls");
 		Workbook wb;
@@ -308,7 +308,7 @@ public class Data {
 		return null; 
 	}
 	
-	public String year() {
+	public String ComadRequestYear() {
 		 
 		File src= new File ("C:\\USAC Project\\PostCommit\\usacupgrade\\TestData.xls");
 		Workbook wb;
@@ -327,7 +327,7 @@ public class Data {
 		return null; 
 	}
 	
-	public String reviewerType() {
+	public String ComadFinalReviewerType() {
 		 
 		File src= new File ("C:\\USAC Project\\PostCommit\\usacupgrade\\TestData.xls");
 		Workbook wb;
@@ -345,8 +345,44 @@ public class Data {
 		}
 		return null; 
 	}
+	public String ComadQaReviewerType() {
+		 
+		File src= new File ("C:\\USAC Project\\PostCommit\\usacupgrade\\TestData.xls");
+		Workbook wb;
+		try {
+			wb = Workbook.getWorkbook(src);
+			String data191=wb.getSheet(0).getCell(19, 1).getContents();
+			  return data191;
+		
+		} catch (BiffException e) {
+			
+			e.printStackTrace();
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
+		return null; 
+	}
+	public String ComadUSACReviewerType() {
+		 
+		File src= new File ("C:\\USAC Project\\PostCommit\\usacupgrade\\TestData.xls");
+		Workbook wb;
+		try {
+			wb = Workbook.getWorkbook(src);
+			String data201=wb.getSheet(0).getCell(20, 1).getContents();
+			  return data201;
+		
+		} catch (BiffException e) {
+			
+			e.printStackTrace();
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
+		return null; 
+	}
 	
-	public String reviewer() {
+	public String ComadFinalReviewerName() {
 		 
 		File src= new File ("C:\\USAC Project\\PostCommit\\usacupgrade\\TestData.xls");
 		Workbook wb;
@@ -354,6 +390,62 @@ public class Data {
 			wb = Workbook.getWorkbook(src);
 			String data211=wb.getSheet(0).getCell(21, 1).getContents();
 			  return data211;
+		
+		} catch (BiffException e) {
+			
+			e.printStackTrace();
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
+		return null; 
+	}
+	
+	public String ComadQaReviewerName() {
+		 
+		File src= new File ("C:\\USAC Project\\PostCommit\\usacupgrade\\TestData.xls");
+		Workbook wb;
+		try {
+			wb = Workbook.getWorkbook(src);
+			String data221=wb.getSheet(0).getCell(22, 1).getContents();
+			  return data221;
+		
+		} catch (BiffException e) {
+			
+			e.printStackTrace();
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
+		return null; 
+	}
+	
+	public String ComadUsacReviewerName() {
+		 
+		File src= new File ("C:\\USAC Project\\PostCommit\\usacupgrade\\TestData.xls");
+		Workbook wb;
+		try {
+			wb = Workbook.getWorkbook(src);
+			String data231=wb.getSheet(0).getCell(23, 1).getContents();
+			  return data231;
+		
+		} catch (BiffException e) {
+			
+			e.printStackTrace();
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
+		return null; 
+	}
+	public String ComadComad() {
+		 
+		File src= new File ("C:\\USAC Project\\PostCommit\\usacupgrade\\TestData.xls");
+		Workbook wb;
+		try {
+			wb = Workbook.getWorkbook(src);
+			String data61=wb.getSheet(0).getCell(6, 1).getContents();
+			  return data61;
 		
 		} catch (BiffException e) {
 			
