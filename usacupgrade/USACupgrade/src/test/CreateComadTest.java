@@ -23,7 +23,6 @@ public class CreateComadTest {
 		
 	@Test (priority=1)
 	public void userLogin() {
-		  //Data testData = new Data(); 
 		 
 		driver.get("https://portal-test4.appiancloud.com/suite");
 		loginPage = new LoginPage(driver);

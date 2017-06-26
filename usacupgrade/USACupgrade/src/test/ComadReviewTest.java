@@ -16,14 +16,13 @@ import pages.SignOutPage;
 
 public class ComadReviewTest {
  
-  LoginPage loginPage;
-  WebDriver driver = new FirefoxDriver();
-  Data testData = new Data(); 
+   LoginPage loginPage;
+   WebDriver driver = new FirefoxDriver();
+   Data testData = new Data(); 
 
 
 @Test (priority=1)
 public void finalReviewManagerLogin() {
-	  //Data testData = new Data(); 
 	
 	driver.get("https://portal-test4.appiancloud.com/suite");
 	loginPage = new LoginPage(driver); 

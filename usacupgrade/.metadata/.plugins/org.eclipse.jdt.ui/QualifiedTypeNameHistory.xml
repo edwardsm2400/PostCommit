@@ -7,10 +7,8 @@
 <fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="jxl.Workbook"/>
 <fullyQualifiedTypeName name="java.lang.Thread"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.firefox.FirefoxDriver"/>
 <fullyQualifiedTypeName name="dataSheet.Data"/>
-<fullyQualifiedTypeName name="pages.RecordsPage"/>
 <fullyQualifiedTypeName name="pages.LoginPage"/>
 <fullyQualifiedTypeName name="pages.SelectUser"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.FindBy"/>
@@ -26,5 +24,12 @@
 <fullyQualifiedTypeName name="java.awt.event.KeyEvent"/>
 <fullyQualifiedTypeName name="pages.PostAssignmentPage"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.WebDriverWait"/>
+<fullyQualifiedTypeName name="pages.SignOutPage"/>
+<fullyQualifiedTypeName name="pages.MyAssignedPage"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.Keys"/>
+<fullyQualifiedTypeName name="pages.RecordsPage"/>
+<fullyQualifiedTypeName name="pages.ComadMainPage"/>
+<fullyQualifiedTypeName name="pages.RelatedActionsPage"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
+<fullyQualifiedTypeName name="pages.ReviewNotesPage"/>
 </qualifiedTypeNameHistroy>
