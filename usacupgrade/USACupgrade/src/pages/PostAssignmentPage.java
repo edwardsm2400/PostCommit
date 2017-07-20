@@ -48,6 +48,30 @@ public class PostAssignmentPage {
 	driver.findElement(assignButton).click();
 	
 	}
+	
+	public void  initiateRequest (String Review,String ReviewerType,String ComadRequestYear, String Request, String Reviewer) throws InterruptedException{
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.findElement(review).sendKeys(Review);
+		driver.findElement(review).sendKeys(Keys.ENTER);
+		Thread.sleep(1500);
+		driver.findElement(reviewer).sendKeys(ReviewerType);
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.findElement(fundingYear).sendKeys(ComadRequestYear);
+		driver.findElement(expander).click();
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.findElement(requestNum).sendKeys(Request);
+		Thread.sleep(1500);
+		driver.findElement(applyFilter).click();
+		Thread.sleep(1500);
+		driver.findElement(checkbox).click();
+		Thread.sleep(1500);
+		driver.findElement(selectReviewer).sendKeys(Reviewer);
+		Thread.sleep(1000);
+		driver.findElement(selectReviewer).sendKeys(Keys.ENTER);
+		Thread.sleep(1000);
+		driver.findElement(assignButton).click();
+		
+		}
 	public void  selectRequestAsOther (String Review,String ReviewerType,String ComadRequestYear, String Request, String Reviewer) throws InterruptedException{
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.findElement(review).sendKeys(Review);

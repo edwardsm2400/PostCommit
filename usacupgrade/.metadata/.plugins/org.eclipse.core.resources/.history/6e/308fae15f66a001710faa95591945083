@@ -1,0 +1,50 @@
+package test;
+
+import java.awt.AWTException;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
+
+import dataSheet.Data;
+import pages.ActionsPage;
+import pages.ComadMainPage;
+import pages.LoginPage;
+import pages.PostAssignmentPage;
+import pages.RecordsPage;
+import pages.RelatedActionsPage;
+import pages.ReviewNotesPage;
+import pages.SelectFrnPage;
+import pages.SignOutPage;
+
+public class Create4ComadTest {
+	LoginPage loginPage;
+	WebDriver driver = new FirefoxDriver();
+	Data testData = new Data(); 
+
+	
+@Test (priority=1)
+public void userLogin() {
+	 
+	driver.get("https://portal-test4.appiancloud.com/suite");
+	loginPage = new LoginPage(driver);
+	loginPage.loginToUsac(testData.userName(), testData.userPassword() );
+	  
+  }
+@Test (priority=2)
+public void actionsTab() throws InterruptedException {
+
+
+	ActionsPage actionsPage = new ActionsPage(driver);
+	actionsPage.clickInitiate();
+}
+
+@Test (priority=3)
+public void selectFrn() throws InterruptedException, AWTException{
+	SelectFrnPage selectFrnpage = new SelectFrnPage(driver);
+	selectFrnpage.select4Frns(testData.ComadFrn(), testData.ComadFrn2(), testData.ComadFrn3(), testData.ComadFrn4());
+	selectFrnpage.recovery4(testData.ComadRecoveryType());
+}
+
+
+}

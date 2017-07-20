@@ -63,6 +63,63 @@ public class Data {
 		}
 		return null; 
 	}
+	public String ComadFrn2() {
+		 
+		File src= new File ("C:\\USAC Project\\PostCommit\\usacupgrade\\TestData.xls");
+		Workbook wb;
+		try {
+			wb = Workbook.getWorkbook(src);
+			String data102=wb.getSheet(0).getCell(10, 2).getContents();
+			  return data102;
+		
+		} catch (BiffException e) {
+			
+			e.printStackTrace();
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
+		return null; 
+	}
+	
+	public String ComadFrn3() {
+		 
+		File src= new File ("C:\\USAC Project\\PostCommit\\usacupgrade\\TestData.xls");
+		Workbook wb;
+		try {
+			wb = Workbook.getWorkbook(src);
+			String data103=wb.getSheet(0).getCell(10, 3).getContents();
+			  return data103;
+		
+		} catch (BiffException e) {
+			
+			e.printStackTrace();
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
+		return null; 
+	}
+	
+	public String ComadFrn4() {
+		 
+		File src= new File ("C:\\USAC Project\\PostCommit\\usacupgrade\\TestData.xls");
+		Workbook wb;
+		try {
+			wb = Workbook.getWorkbook(src);
+			String data104=wb.getSheet(0).getCell(10, 4).getContents();
+			  return data104;
+		
+		} catch (BiffException e) {
+			
+			e.printStackTrace();
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
+		return null; 
+	}
+	
 	
 	
 	public String ComadRecoveryType() {
@@ -73,6 +130,25 @@ public class Data {
 			wb = Workbook.getWorkbook(src);
 			String data111=wb.getSheet(0).getCell(11, 1).getContents();
 			  return data111;
+		
+		} catch (BiffException e) {
+			
+			e.printStackTrace();
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
+		return null; 
+	}
+	
+	public String AdjustmentReason() {
+		 
+		File src= new File ("C:\\USAC Project\\PostCommit\\usacupgrade\\TestData.xls");
+		Workbook wb;
+		try {
+			wb = Workbook.getWorkbook(src);
+			String data241=wb.getSheet(0).getCell(24, 1).getContents();
+			  return data241;
 		
 		} catch (BiffException e) {
 			

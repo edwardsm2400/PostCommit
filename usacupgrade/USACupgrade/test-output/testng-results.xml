@@ -2,116 +2,116 @@
 <testng-results skipped="0" failed="0" total="26" passed="26">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="117757" started-at="2017-06-26T18:53:57Z" finished-at="2017-06-26T18:55:54Z">
+  <suite name="Default suite" duration-ms="159021" started-at="2017-07-20T17:25:27Z" finished-at="2017-07-20T17:28:07Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="117757" started-at="2017-06-26T18:53:57Z" finished-at="2017-06-26T18:55:54Z">
-      <class name="test.ComadReviewEditTest">
-        <test-method status="PASS" signature="finalReviewManagerLogin()[pri:1, instance:test.ComadReviewEditTest@2bfc268b]" name="finalReviewManagerLogin" duration-ms="2709" started-at="2017-06-26T14:53:57Z" finished-at="2017-06-26T14:53:59Z">
+    <test name="Default test" duration-ms="159021" started-at="2017-07-20T17:25:27Z" finished-at="2017-07-20T17:28:07Z">
+      <class name="test.FourComadReviewTest">
+        <test-method status="PASS" signature="finalReviewManagerLogin()[pri:1, instance:test.FourComadReviewTest@2bfc268b]" name="finalReviewManagerLogin" duration-ms="2667" started-at="2017-07-20T13:25:27Z" finished-at="2017-07-20T13:25:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finalReviewManagerLogin -->
-        <test-method status="PASS" signature="finalReviewManagerAssignRequest()[pri:2, instance:test.ComadReviewEditTest@2bfc268b]" name="finalReviewManagerAssignRequest" duration-ms="21155" started-at="2017-06-26T14:53:59Z" finished-at="2017-06-26T14:54:20Z">
+        <test-method status="PASS" signature="finalReviewManagerAssignRequest()[pri:2, instance:test.FourComadReviewTest@2bfc268b]" name="finalReviewManagerAssignRequest" duration-ms="21044" started-at="2017-07-20T13:25:30Z" finished-at="2017-07-20T13:25:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finalReviewManagerAssignRequest -->
-        <test-method status="PASS" signature="finalReviewManagerSignOut()[pri:3, instance:test.ComadReviewEditTest@2bfc268b]" name="finalReviewManagerSignOut" duration-ms="2313" started-at="2017-06-26T14:54:20Z" finished-at="2017-06-26T14:54:23Z">
+        <test-method status="PASS" signature="finalReviewManagerSignOut()[pri:3, instance:test.FourComadReviewTest@2bfc268b]" name="finalReviewManagerSignOut" duration-ms="2176" started-at="2017-07-20T13:25:51Z" finished-at="2017-07-20T13:25:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finalReviewManagerSignOut -->
-        <test-method status="PASS" signature="finalReviewerLogin()[pri:4, instance:test.ComadReviewEditTest@2bfc268b]" name="finalReviewerLogin" duration-ms="1303" started-at="2017-06-26T14:54:23Z" finished-at="2017-06-26T14:54:24Z">
+        <test-method status="PASS" signature="finalReviewerLogin()[pri:4, instance:test.FourComadReviewTest@2bfc268b]" name="finalReviewerLogin" duration-ms="1361" started-at="2017-07-20T13:25:53Z" finished-at="2017-07-20T13:25:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finalReviewerLogin -->
-        <test-method status="PASS" signature="finalReviewerSelectRequest()[pri:5, instance:test.ComadReviewEditTest@2bfc268b]" name="finalReviewerSelectRequest" duration-ms="8606" started-at="2017-06-26T14:54:24Z" finished-at="2017-06-26T14:54:33Z">
+        <test-method status="PASS" signature="finalReviewerSelectRequest()[pri:5, instance:test.FourComadReviewTest@2bfc268b]" name="finalReviewerSelectRequest" duration-ms="8477" started-at="2017-07-20T13:25:55Z" finished-at="2017-07-20T13:26:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finalReviewerSelectRequest -->
-        <test-method status="PASS" signature="finalReviewerRelatedActions()[pri:6, instance:test.ComadReviewEditTest@2bfc268b]" name="finalReviewerRelatedActions" duration-ms="1413" started-at="2017-06-26T14:54:33Z" finished-at="2017-06-26T14:54:34Z">
+        <test-method status="PASS" signature="finalReviewerRelatedActions()[pri:6, instance:test.FourComadReviewTest@2bfc268b]" name="finalReviewerRelatedActions" duration-ms="1264" started-at="2017-07-20T13:26:03Z" finished-at="2017-07-20T13:26:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finalReviewerRelatedActions -->
-        <test-method status="PASS" signature="finalReviewerAddReviewNotes()[pri:7, instance:test.ComadReviewEditTest@2bfc268b]" name="finalReviewerAddReviewNotes" duration-ms="1282" started-at="2017-06-26T14:54:34Z" finished-at="2017-06-26T14:54:35Z">
+        <test-method status="PASS" signature="finalReviewerAddReviewNotes()[pri:7, instance:test.FourComadReviewTest@2bfc268b]" name="finalReviewerAddReviewNotes" duration-ms="944" started-at="2017-07-20T13:26:05Z" finished-at="2017-07-20T13:26:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finalReviewerAddReviewNotes -->
-        <test-method status="PASS" signature="finalReviewerSubmitNote()[pri:8, instance:test.ComadReviewEditTest@2bfc268b]" name="finalReviewerSubmitNote" duration-ms="6460" started-at="2017-06-26T14:54:35Z" finished-at="2017-06-26T14:54:42Z">
+        <test-method status="PASS" signature="finalReviewerSubmitNote()[pri:8, instance:test.FourComadReviewTest@2bfc268b]" name="finalReviewerSubmitNote" duration-ms="20725" started-at="2017-07-20T13:26:05Z" finished-at="2017-07-20T13:26:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finalReviewerSubmitNote -->
-        <test-method status="PASS" signature="finalReviewerSignOut()[pri:9, instance:test.ComadReviewEditTest@2bfc268b]" name="finalReviewerSignOut" duration-ms="2139" started-at="2017-06-26T14:54:42Z" finished-at="2017-06-26T14:54:44Z">
+        <test-method status="PASS" signature="finalReviewerSignOut()[pri:9, instance:test.FourComadReviewTest@2bfc268b]" name="finalReviewerSignOut" duration-ms="2132" started-at="2017-07-20T13:26:26Z" finished-at="2017-07-20T13:26:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finalReviewerSignOut -->
-        <test-method status="PASS" signature="qareviewManagerLogin()[pri:10, instance:test.ComadReviewEditTest@2bfc268b]" name="qareviewManagerLogin" duration-ms="1312" started-at="2017-06-26T14:54:44Z" finished-at="2017-06-26T14:54:45Z">
+        <test-method status="PASS" signature="qareviewManagerLogin()[pri:10, instance:test.FourComadReviewTest@2bfc268b]" name="qareviewManagerLogin" duration-ms="1508" started-at="2017-07-20T13:26:28Z" finished-at="2017-07-20T13:26:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- qareviewManagerLogin -->
-        <test-method status="PASS" signature="qaReviewManagerAssignRequest()[pri:11, instance:test.ComadReviewEditTest@2bfc268b]" name="qaReviewManagerAssignRequest" duration-ms="11910" started-at="2017-06-26T14:54:45Z" finished-at="2017-06-26T14:54:57Z">
+        <test-method status="PASS" signature="qaReviewManagerAssignRequest()[pri:11, instance:test.FourComadReviewTest@2bfc268b]" name="qaReviewManagerAssignRequest" duration-ms="11662" started-at="2017-07-20T13:26:30Z" finished-at="2017-07-20T13:26:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- qaReviewManagerAssignRequest -->
-        <test-method status="PASS" signature="qaReviewManagerSignOut()[pri:12, instance:test.ComadReviewEditTest@2bfc268b]" name="qaReviewManagerSignOut" duration-ms="2074" started-at="2017-06-26T14:54:57Z" finished-at="2017-06-26T14:54:59Z">
+        <test-method status="PASS" signature="qaReviewManagerSignOut()[pri:12, instance:test.FourComadReviewTest@2bfc268b]" name="qaReviewManagerSignOut" duration-ms="2040" started-at="2017-07-20T13:26:41Z" finished-at="2017-07-20T13:26:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- qaReviewManagerSignOut -->
-        <test-method status="PASS" signature="qaReviewerLogin()[pri:13, instance:test.ComadReviewEditTest@2bfc268b]" name="qaReviewerLogin" duration-ms="1306" started-at="2017-06-26T14:54:59Z" finished-at="2017-06-26T14:55:01Z">
+        <test-method status="PASS" signature="qaReviewerLogin()[pri:13, instance:test.FourComadReviewTest@2bfc268b]" name="qaReviewerLogin" duration-ms="1237" started-at="2017-07-20T13:26:44Z" finished-at="2017-07-20T13:26:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- qaReviewerLogin -->
-        <test-method status="PASS" signature="qaReviewerSelectRequest()[pri:14, instance:test.ComadReviewEditTest@2bfc268b]" name="qaReviewerSelectRequest" duration-ms="8607" started-at="2017-06-26T14:55:01Z" finished-at="2017-06-26T14:55:09Z">
+        <test-method status="PASS" signature="qaReviewerSelectRequest()[pri:14, instance:test.FourComadReviewTest@2bfc268b]" name="qaReviewerSelectRequest" duration-ms="7877" started-at="2017-07-20T13:26:45Z" finished-at="2017-07-20T13:26:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- qaReviewerSelectRequest -->
-        <test-method status="PASS" signature="qaReviewerRelatedActions()[pri:15, instance:test.ComadReviewEditTest@2bfc268b]" name="qaReviewerRelatedActions" duration-ms="1467" started-at="2017-06-26T14:55:09Z" finished-at="2017-06-26T14:55:11Z">
+        <test-method status="PASS" signature="qaReviewerRelatedActions()[pri:15, instance:test.FourComadReviewTest@2bfc268b]" name="qaReviewerRelatedActions" duration-ms="1348" started-at="2017-07-20T13:26:53Z" finished-at="2017-07-20T13:26:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- qaReviewerRelatedActions -->
-        <test-method status="PASS" signature="qaReviewerAddReviewNotes()[pri:16, instance:test.ComadReviewEditTest@2bfc268b]" name="qaReviewerAddReviewNotes" duration-ms="1459" started-at="2017-06-26T14:55:11Z" finished-at="2017-06-26T14:55:12Z">
+        <test-method status="PASS" signature="qaReviewerAddReviewNotes()[pri:16, instance:test.FourComadReviewTest@2bfc268b]" name="qaReviewerAddReviewNotes" duration-ms="930" started-at="2017-07-20T13:26:54Z" finished-at="2017-07-20T13:26:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- qaReviewerAddReviewNotes -->
-        <test-method status="PASS" signature="qaReviewerSubmitNote()[pri:17, instance:test.ComadReviewEditTest@2bfc268b]" name="qaReviewerSubmitNote" duration-ms="5981" started-at="2017-06-26T14:55:12Z" finished-at="2017-06-26T14:55:18Z">
+        <test-method status="PASS" signature="qaReviewerSubmitNote()[pri:17, instance:test.FourComadReviewTest@2bfc268b]" name="qaReviewerSubmitNote" duration-ms="21057" started-at="2017-07-20T13:26:55Z" finished-at="2017-07-20T13:27:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- qaReviewerSubmitNote -->
-        <test-method status="PASS" signature="qaReviewerSignOut()[pri:18, instance:test.ComadReviewEditTest@2bfc268b]" name="qaReviewerSignOut" duration-ms="2549" started-at="2017-06-26T14:55:18Z" finished-at="2017-06-26T14:55:21Z">
+        <test-method status="PASS" signature="qaReviewerSignOut()[pri:18, instance:test.FourComadReviewTest@2bfc268b]" name="qaReviewerSignOut" duration-ms="2252" started-at="2017-07-20T13:27:16Z" finished-at="2017-07-20T13:27:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- qaReviewerSignOut -->
-        <test-method status="PASS" signature="usacReviewManagerLogin()[pri:19, instance:test.ComadReviewEditTest@2bfc268b]" name="usacReviewManagerLogin" duration-ms="1315" started-at="2017-06-26T14:55:21Z" finished-at="2017-06-26T14:55:22Z">
+        <test-method status="PASS" signature="usacReviewManagerLogin()[pri:19, instance:test.FourComadReviewTest@2bfc268b]" name="usacReviewManagerLogin" duration-ms="1216" started-at="2017-07-20T13:27:18Z" finished-at="2017-07-20T13:27:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- usacReviewManagerLogin -->
-        <test-method status="PASS" signature="usacReviewManagerAssignRequest()[pri:20, instance:test.ComadReviewEditTest@2bfc268b]" name="usacReviewManagerAssignRequest" duration-ms="12157" started-at="2017-06-26T14:55:22Z" finished-at="2017-06-26T14:55:34Z">
+        <test-method status="PASS" signature="usacReviewManagerAssignRequest()[pri:20, instance:test.FourComadReviewTest@2bfc268b]" name="usacReviewManagerAssignRequest" duration-ms="11858" started-at="2017-07-20T13:27:19Z" finished-at="2017-07-20T13:27:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- usacReviewManagerAssignRequest -->
-        <test-method status="PASS" signature="usacReviewManagerSignOut()[pri:21, instance:test.ComadReviewEditTest@2bfc268b]" name="usacReviewManagerSignOut" duration-ms="2065" started-at="2017-06-26T14:55:34Z" finished-at="2017-06-26T14:55:36Z">
+        <test-method status="PASS" signature="usacReviewManagerSignOut()[pri:21, instance:test.FourComadReviewTest@2bfc268b]" name="usacReviewManagerSignOut" duration-ms="2048" started-at="2017-07-20T13:27:31Z" finished-at="2017-07-20T13:27:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- usacReviewManagerSignOut -->
-        <test-method status="PASS" signature="usacReviewerLogin()[pri:22, instance:test.ComadReviewEditTest@2bfc268b]" name="usacReviewerLogin" duration-ms="1341" started-at="2017-06-26T14:55:36Z" finished-at="2017-06-26T14:55:38Z">
+        <test-method status="PASS" signature="usacReviewerLogin()[pri:22, instance:test.FourComadReviewTest@2bfc268b]" name="usacReviewerLogin" duration-ms="1311" started-at="2017-07-20T13:27:33Z" finished-at="2017-07-20T13:27:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- usacReviewerLogin -->
-        <test-method status="PASS" signature="usacReviewerSelectRequest()[pri:23, instance:test.ComadReviewEditTest@2bfc268b]" name="usacReviewerSelectRequest" duration-ms="8230" started-at="2017-06-26T14:55:38Z" finished-at="2017-06-26T14:55:46Z">
+        <test-method status="PASS" signature="usacReviewerSelectRequest()[pri:23, instance:test.FourComadReviewTest@2bfc268b]" name="usacReviewerSelectRequest" duration-ms="8216" started-at="2017-07-20T13:27:35Z" finished-at="2017-07-20T13:27:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- usacReviewerSelectRequest -->
-        <test-method status="PASS" signature="usacReviewerRelatedActions()[pri:24, instance:test.ComadReviewEditTest@2bfc268b]" name="usacReviewerRelatedActions" duration-ms="1359" started-at="2017-06-26T14:55:46Z" finished-at="2017-06-26T14:55:47Z">
+        <test-method status="PASS" signature="usacReviewerRelatedActions()[pri:24, instance:test.FourComadReviewTest@2bfc268b]" name="usacReviewerRelatedActions" duration-ms="1117" started-at="2017-07-20T13:27:43Z" finished-at="2017-07-20T13:27:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- usacReviewerRelatedActions -->
-        <test-method status="PASS" signature="usacReviewerAddReviewNotes()[pri:25, instance:test.ComadReviewEditTest@2bfc268b]" name="usacReviewerAddReviewNotes" duration-ms="1318" started-at="2017-06-26T14:55:47Z" finished-at="2017-06-26T14:55:48Z">
+        <test-method status="PASS" signature="usacReviewerAddReviewNotes()[pri:25, instance:test.FourComadReviewTest@2bfc268b]" name="usacReviewerAddReviewNotes" duration-ms="814" started-at="2017-07-20T13:27:44Z" finished-at="2017-07-20T13:27:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- usacReviewerAddReviewNotes -->
-        <test-method status="PASS" signature="usacReviewerSubmitNote()[pri:26, instance:test.ComadReviewEditTest@2bfc268b]" name="usacReviewerSubmitNote" duration-ms="5880" started-at="2017-06-26T14:55:48Z" finished-at="2017-06-26T14:55:54Z">
+        <test-method status="PASS" signature="usacReviewerSubmitNote()[pri:26, instance:test.FourComadReviewTest@2bfc268b]" name="usacReviewerSubmitNote" duration-ms="21695" started-at="2017-07-20T13:27:45Z" finished-at="2017-07-20T13:28:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- usacReviewerSubmitNote -->
-      </class> <!-- test.ComadReviewEditTest -->
+      </class> <!-- test.FourComadReviewTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

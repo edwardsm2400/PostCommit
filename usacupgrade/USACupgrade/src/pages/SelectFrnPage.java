@@ -21,15 +21,25 @@ public class SelectFrnPage {
 	By frn=(By.xpath("//label[contains(text(),'FRN')]"));
 	By search=(By.xpath("/html/body/div[6]/div[2]/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/form/div[2]/div/div/div/div/div/div/div[2]/div[3]/div/div/div/div/div/div/div[2]/button[2]"));
 	By checkbox = (By.xpath("//input[@type='checkbox']"));
+	By checkbox1=(By.xpath("/html/body/div[6]/div[2]/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/form/div[2]/div/div/div/div/div/div/div[3]/div[3]/div/div/div/div/div/div/div/div/div/div[3]/div/div/div[2]/table/tbody[1]/tr/td[1]/div/input"));
 	By addFrn= (By.xpath("//button[contains(.,'Add')]"));
 	By continueOn =  (By.xpath("//button[contains(.,'Continue')]"));
 	By recovery = (By.xpath("/html/body/div[6]/div[2]/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/form/div[2]/div/div/div/div/div/div/div[5]/div[3]/div/div/div/div/div/div/div/div/div[3]/div/table/tbody/tr/td[7]/div/div/div/div[1]/div/select"));
+	By recovery1 = (By.xpath("/html/body/div[6]/div[2]/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/form/div[2]/div/div/div/div/div/div/div[5]/div[3]/div/div/div/div/div/div/div/div/div[3]/div/table/tbody/tr[1]/td[7]/div/div/div/div[1]/div/select"));
+	By recovery2 = (By.xpath("/html/body/div[6]/div[2]/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/form/div[2]/div/div/div/div/div/div/div[5]/div[3]/div/div/div/div/div/div/div/div/div[3]/div/table/tbody/tr[2]/td[7]/div/div/div/div[1]/div/select"));
+	By recovery3 = (By.xpath("/html/body/div[6]/div[2]/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/form/div[2]/div/div/div/div/div/div/div[5]/div[3]/div/div/div/div/div/div/div/div/div[3]/div/table/tbody/tr[3]/td[7]/div/div/div/div[1]/div/select"));
+	By recovery4 = (By.xpath("/html/body/div[6]/div[2]/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/form/div[2]/div/div/div/div/div/div/div[5]/div[3]/div/div/div/div/div/div/div/div/div[3]/div/table/tbody/tr[4]/td[7]/div/div/div/div[1]/div/select"));
 	By adjustment = (By.xpath("/html/body/div[6]/div[2]/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/form/div[2]/div/div/div/div/div/div/div[5]/div[3]/div/div/div/div/div/div/div/div/div[3]/div/table/tbody/tr/td[8]/div/div/div/div[1]/div/select"));
+	By adjustment1 = (By.xpath("/html/body/div[6]/div[2]/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/form/div[2]/div/div/div/div/div/div/div[5]/div[3]/div/div/div/div/div/div/div/div/div[3]/div/table/tbody/tr[1]/td[8]/div/div/div/div[1]/div/select"));
+	By adjustment2 = (By.xpath("/html/body/div[6]/div[2]/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/form/div[2]/div/div/div/div/div/div/div[5]/div[3]/div/div/div/div/div/div/div/div/div[3]/div/table/tbody/tr[2]/td[8]/div/div/div/div[1]/div/select"));
+	By adjustment3 = (By.xpath("/html/body/div[6]/div[2]/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/form/div[2]/div/div/div/div/div/div/div[5]/div[3]/div/div/div/div/div/div/div/div/div[3]/div/table/tbody/tr[3]/td[8]/div/div/div/div[1]/div/select"));
+	By adjustment4 = (By.xpath("/html/body/div[6]/div[2]/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/form/div[2]/div/div/div/div/div/div/div[5]/div[3]/div/div/div/div/div/div/div/div/div[3]/div/table/tbody/tr[4]/td[8]/div/div/div/div[1]/div/select"));
 	By primary = (By.xpath("/html/body/div[6]/div[2]/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/form/div[2]/div/div/div/div/div/div/div[5]/div[3]/div/div/div/div/div/div/div/div/div[3]/div/table/tbody/tr/td[6]/div/div/div[1]/div/div/span/input"));
 	By nickname=(By.xpath("//label[contains(text(),'Nickname')]"));
 	By narrative=(By.xpath("//label[contains(text(),'Narrative')]"));
 	By origin=(By.xpath("/html/body/div[6]/div[2]/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/form/div[2]/div/div/div/div/div/div/div[1]/div[3]/div/div/div/div/div/div[3]/div/div/div/div[1]/div/select"));
 	By submit=  (By.xpath("//button[contains(.,'Submit')]"));
+	By clear=  (By.xpath("//button[contains(.,'Clear')]"));
 	By confirmation = (By.id("rich-text "));
 	
 	public SelectFrnPage(WebDriver driver) {
@@ -61,7 +71,92 @@ public class SelectFrnPage {
 	  driver.findElement(continueOn).click();
 	  }
   
-  public void comadDetails (String requestName, String narrativeHere) throws InterruptedException, AWTException{
+  public void select4Frns (String frnNum, String frnNum2, String frnNum3, String frnNum4) throws InterruptedException{
+	  driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+	  driver.findElement(year).sendKeys("2016");
+	  driver.findElement(year).sendKeys(Keys.ENTER);
+	  Thread.sleep(3000);
+	  driver.findElement(frn).sendKeys(frnNum);
+	  driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+	  driver.findElement(search).click();
+	  Thread.sleep(2000);
+	  driver.findElement(checkbox).click();
+	  Thread.sleep(1500);
+	  driver.findElement(addFrn).click();
+	  Thread.sleep(1000);
+	 
+	  driver.findElement(clear).click();
+	  
+	  Thread.sleep(1000);
+	  driver.findElement(year).sendKeys("2016");
+	  driver.findElement(year).sendKeys(Keys.ENTER);
+	  Thread.sleep(3000);
+	  driver.findElement(frn).sendKeys(frnNum2);
+	  driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+	  driver.findElement(search).click();
+	  Thread.sleep(2000);
+	  driver.findElement(checkbox1).click();
+	  Thread.sleep(1500);
+	  driver.findElement(addFrn).click();
+	  Thread.sleep(1000);
+	 
+	  driver.findElement(clear).click();
+	  
+	  Thread.sleep(1000);
+	  driver.findElement(year).sendKeys("2016");
+	  driver.findElement(year).sendKeys(Keys.ENTER);
+	  Thread.sleep(3000);
+	  driver.findElement(frn).sendKeys(frnNum3);
+	  driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+	  driver.findElement(search).click();
+	  Thread.sleep(2000);
+	  driver.findElement(checkbox1).click();
+	  Thread.sleep(1500);
+	  driver.findElement(addFrn).click();
+	  Thread.sleep(1000);
+	  
+	  driver.findElement(clear).click();
+	  
+	  Thread.sleep(1000);
+	  driver.findElement(year).sendKeys("2016");
+	  driver.findElement(year).sendKeys(Keys.ENTER);
+	  Thread.sleep(3000);
+	  driver.findElement(frn).sendKeys(frnNum4);
+	  driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+	  driver.findElement(search).click();
+	  Thread.sleep(2000);
+	  driver.findElement(checkbox).click();
+	  Thread.sleep(1500);
+	  driver.findElement(addFrn).click();
+	  Thread.sleep(1500);
+	  driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+  }
+  
+  public void recovery4(String recoveryType){
+	  driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+	  driver.findElement(recovery1).sendKeys(recoveryType);
+	  driver.findElement(recovery2).sendKeys(recoveryType);
+	  driver.findElement(recovery3).sendKeys(recoveryType);
+	  driver.findElement(recovery4).sendKeys(recoveryType);
+	  
+  }
+  
+   public void adjustment4(String recoveryType){
+	  driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+	  driver.findElement(adjustment1).sendKeys(recoveryType);
+	  driver.findElement(adjustment2).sendKeys(recoveryType);
+	  driver.findElement(adjustment3).sendKeys(recoveryType);
+	  driver.findElement(adjustment4).sendKeys(recoveryType);
+	  
+  }
+   
+   public void selectPrimary() throws InterruptedException{
+	  driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+	  driver.findElement(primary).click();
+	  Thread.sleep(1000);
+	  driver.findElement(continueOn).click();
+   }
+   public void comadDetails (String requestName, String narrativeHere) throws InterruptedException, AWTException{
 	  String text = "C:\\USAC Project\\PostCommit\\usacupgrade\\upload.xlsx";
 		StringSelection stringSelection = new StringSelection(text);
 		Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
@@ -90,7 +185,7 @@ public class SelectFrnPage {
 		
   }
   
-  public void comadConfirm (){
+   public void comadConfirm (){
 	  String confirm = driver.findElement(confirmation).getAttribute("value");
 		System.out.println(confirm);
 	  
